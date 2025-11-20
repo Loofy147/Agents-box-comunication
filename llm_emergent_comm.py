@@ -56,6 +56,7 @@ class CommunicationResult:
     tokens_used: int
     latency: float
     reward: float
+    timestamp: float
     
 @dataclass
 class ProtocolEntry:
@@ -70,7 +71,7 @@ class ProtocolEntry:
 class Config:
     """System configuration"""
     # LLM Settings
-    MODEL = "claude-sonnet-4-20250514"
+    MODEL = "claude-3-5-sonnet-20240620"
     MAX_TOKENS = 1000
     TEMPERATURE = 0.7
     
